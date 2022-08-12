@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <title>Comment Box</title>
+</head>
+<header>
+  <h1>Make a comment</h1>
+</header>
+<body>
+  <form action="#" method="get">
+      
+    <label for="name-el">Name</label> 
+    <input type="text" id="name-el" name="name" value="" required>
+
+    <label for="email-el">Email Address</label>
+    <input type="email" id="email-el" name="email" value="" required>
+
+    <label for="input-el">Comment</label>
+    <textarea id="input-el" name="comment" rows="5" autocorrect="on" required placeholder="What's your comment?"></textarea>
+ 
+          
+    <button type="submit" id="submit-btn">Submit your comment</button>
+  </form>
+
+  <section class="comments-section">
+    <div>
+      <h2>Latest Comments</h2>
+      <p id="comment-el"></p>
+      <p id="author-el"></p>
+    </div>
+    <div>
+      <ul id="ul-el">
+    
+      </ul>
+    </div>
+  </section>
+  <script src="script2.js"></script>
+</body>
+</html>
